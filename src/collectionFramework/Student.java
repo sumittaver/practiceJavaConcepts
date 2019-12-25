@@ -3,9 +3,13 @@ package collectionFramework;
 public class Student{
 	int rollNumber;
 	String nameOfStudent;
-	public void getStudentDetails(String j) {
-		//this.rollNumber=i;
+	/*
+	 * This is student details.
+	 * You can add more details.
+	 * */
+	Student(int i,String j) {
+		this.rollNumber=i;
 		this.nameOfStudent=j;
-		System.out.println("Student Roll no. "+rollNumber+" and Name: "+nameOfStudent);
+		//System.out.println("Student Roll no. "+rollNumber+" and Name: "+nameOfStudent);
 	}
 }

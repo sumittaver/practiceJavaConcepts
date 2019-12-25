@@ -41,7 +41,20 @@ public class ListConcept {
 			System.out.println(myList.get(i));
 		}
 		
-		ListConcept sConcept=new ListConcept();
+		System.out.println("\n### Storing user defined objects in Linked List ###");
+		Student s1=new Student(001, "Anand");
+		Student s2=new Student(002, "Seema");
+		Student s3=new Student(003, "Ashpinder");
+		ArrayList<Student> myList2nd=new ArrayList<Student>();
+		myList2nd.add(s1);
+		myList2nd.add(s2);
+		myList2nd.add(s3);
+		for(Student abc:myList2nd) {
+			System.out.println("Roll number: "+abc.rollNumber+" | Name: "+abc.nameOfStudent);
+		}
+		
+		
+		
 		
 		System.out.println("\n**************** Linked List ****************");
 		/*
