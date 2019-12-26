@@ -21,6 +21,8 @@ public class ListConcept {
 		ArrayList<String> myList=new ArrayList<String>();
 		myList.add("sumit");
 		myList.add("Tavar");
+		myList.add(1,"Kumar");
+		
 		
 		System.out.println("\n### Printing using Iterator ###");
 		Iterator<String> myIterator=myList.iterator();
@@ -42,18 +44,16 @@ public class ListConcept {
 		}
 		
 		System.out.println("\n### Storing user defined objects in Linked List ###");
-		Student s1=new Student(001, "Anand");
-		Student s2=new Student(002, "Seema");
-		Student s3=new Student(003, "Ashpinder");
+		Student s1=new Student(001, "Anand","Ghaziabad",18);
+		Student s2=new Student(002, "Seema","Delhi",20);
+		Student s3=new Student(003, "Ashpinder","Punjab",17);
 		ArrayList<Student> myList2nd=new ArrayList<Student>();
 		myList2nd.add(s1);
 		myList2nd.add(s2);
 		myList2nd.add(s3);
 		for(Student abc:myList2nd) {
-			System.out.println("Roll number: "+abc.rollNumber+" | Name: "+abc.nameOfStudent);
+			System.out.println("Roll number: "+abc.rollNumber+" | Name: "+abc.nameOfStudent+" | City: "+abc.city+" | Age: "+abc.age);
 		}
-		
-		
 		
 		
 		System.out.println("\n**************** Linked List ****************");

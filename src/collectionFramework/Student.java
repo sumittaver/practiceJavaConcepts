@@ -1,15 +1,20 @@
 package collectionFramework;
 
+import methodOverriding.thisIsChild;
+
 public class Student{
 	int rollNumber;
 	String nameOfStudent;
+	String city;
+	int age;
 	/*
 	 * This is student details.
 	 * You can add more details.
 	 * */
-	Student(int i,String j) {
-		this.rollNumber=i;
-		this.nameOfStudent=j;
-		//System.out.println("Student Roll no. "+rollNumber+" and Name: "+nameOfStudent);
+	Student(int rollnumber,String name,String city,int age) {
+		this.rollNumber=rollnumber;
+		this.nameOfStudent=name;
+		this.city=city;
+		this.age=age;
 	}
 }
