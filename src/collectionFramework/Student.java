@@ -1,7 +1,5 @@
 package collectionFramework;
 
-import methodOverriding.thisIsChild;
-
 public class Student{
 	int rollNumber;
 	String nameOfStudent;

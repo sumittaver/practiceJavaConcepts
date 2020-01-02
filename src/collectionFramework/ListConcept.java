@@ -3,6 +3,8 @@ package collectionFramework;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Stack;
+import java.util.Vector;
 
 public class ListConcept {
 
@@ -73,6 +75,40 @@ public class ListConcept {
 			System.out.println(string);
 		}
 		
+		System.out.println("\n**************** Vector ****************");
+		/*
+		 * Vector uses a dynamic array to store the data elements. 
+		 * It is similar to ArrayList. 
+		 * However, It is synchronized and contains many methods that are not the part of Collection framework.
+		 * */
+		Vector<String> v=new Vector<String>();  
+		v.add("Ayush");  
+		v.add("Amit");  
+		v.add("Ashish");  
+		v.add("Garima");  
+		Iterator<String> itr=v.iterator();  
+		while(itr.hasNext()){  
+		System.out.println(itr.next());  
+		}  
+		
+		System.out.println("\n**************** Stack ****************");
+		/*
+		 * The stack is the subclass of Vector. 
+		 * It implements the last-in-first-out data structure, i.e., Stack. 
+		 * The stack contains all of the methods of Vector class
+		 * 
+		 * */
+		Stack<String> stack = new Stack<String>();  
+		stack.push("Ayush");  
+		stack.push("Garvit");  
+		stack.push("Amit");  
+		stack.push("Ashish");  
+		stack.push("Garima");  
+		stack.pop();  
+		Iterator<String> itr2=stack.iterator();  
+		while(itr2.hasNext()){  
+		System.out.println(itr2.next());  
+		}  
 		
 		
 	}
