@@ -22,6 +22,7 @@ public class HashMapConcept {
 		 * HashMap is non-synchronized that is why multiple threads can access same resource
 		 * In another words it is not provide thread safety
 		 * */
+		System.out.println("Adding objects in map");
 		HashMap<String,Student> myMap=new HashMap<String,Student>();
 		Student s1=new Student(01, "Rahul", "Delhi", 28);
 		Student s2=new Student(02, "Avinash", "Ghaziabad", 29);
@@ -37,6 +38,7 @@ public class HashMapConcept {
 		myMap.put(null, s5);//Adding null key
 		//myMap.put("005", null);//Adding null value
 		myMap.put(null, s5);//Adding 2nd null key
+		myMap.put("006", s6);
 		
 		for(Map.Entry myEntry:myMap.entrySet()) {
 			System.out.println("\nStudent Rollnumber:"+myEntry.getKey());
@@ -59,13 +61,20 @@ public class HashMapConcept {
 		
 		System.out.println("\n==================== Linked HashMap ====================");
 		/*
-		 * 
+		 * HashMap implementation LinkedHashMap maintains the insertion order.
 		 * */
+		
 		
 		System.out.println("\n==================== TreeMap ====================");
 		/*
-		 * 
+		 * TreeMap sorts the mappings based on the ascending order of keys.
+		 * */ 
+		
+		System.out.println("\n==================== TreeMap ====================");
+		/*
+		 * Hashtable is synchronized. It ensures that no more than one thread can access the Hashtable at a given moment of time.
 		 * */
+		
 		
 	}
 

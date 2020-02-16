@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class pattern {
 	//Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
+		
+		System.out.println("\n============== Prog.1 ===============\n");
 		/*
 		O X O X O X O 
 		X O X O X O X 
@@ -30,7 +32,7 @@ public class pattern {
 			System.out.print("\n");
 		}	
 		// Pattern1 End
-		System.out.println("\n==============================\n");
+		System.out.println("\n============== Prog.2 ===============\n");
 		/*
 		* * * * * * * * * 
 		* *   * * * * * 
@@ -79,7 +81,7 @@ public class pattern {
 		}
 		// Pattern 2 End
 		
-		System.out.println("\n==============================\n");
+		System.out.println("\n============== Prog.3 ===============\n");
 		
 		// Pattern 3 Start
 		
@@ -92,7 +94,7 @@ public class pattern {
 		System.out.print("Array size: "+arr2.length+" & Array sum is: "+total);
 		
 		// Pattern 3 End
-		System.out.println("\n==============================\n");
+		System.out.println("\n============== Prog.4 ===============\n");
 		// Pattern 4 Start
 		/*
 		 *
@@ -110,31 +112,30 @@ public class pattern {
 		}
 		
 		// Pattern 4 End
-		System.out.println("\n==============================\n");
+		System.out.println("\n============== Prog.5 ===============\n");
 		// Pattern 5 Start
 		/*
-		      *
-		     **
-		    ***
-		   ****
-		  ******
+		         *
+		       * *
+		     * * *
+		   * * * *
+		 * * * * *
 		 * */
-		int range2=5;
-		for (int i=5;i>=range;i--) {
-			for (int j=5;j>=range;j--) {
-				if(j>=range2) {
-					System.out.print("* ");
-				}else {
-					System.out.print("_ ");
-				}
+		int prog5Length=5;
+		for (int i=1;i<=prog5Length;i++) {
+			for (int j=4;j>=i;j--) {
+				System.out.print("  ");
 				
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print(" *");
 			}
 			
 			System.out.println("");
 		}
 		
 		// Pattern 5 End
-		System.out.println("\n==============================\n");
+		System.out.println("\n============== Prog.6 ===============\n");
 		/*
 		    *
 		   * *
@@ -147,10 +148,75 @@ public class pattern {
 		    * 
 		 * */
 		// Pattern 6 Start
+		int prog6Size=15;
+		for(int i=1;i<=prog6Size/2;i++) {
+			for(int j=(prog6Size/2)-1;j>=i;j--) {
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i;k++) {
+				System.out.print("* ");
+			}
+			System.out.println("");	
+		}
+		for(int i=1;i<=(prog6Size/2)-1;i++) {
+			for(int j=1;j<=i;j++) {
+				System.out.print(" ");
+			}
+			for(int k=(prog6Size/2)-1;k>=i;k--) {
+				System.out.print("* ");
+			}
+			System.out.println("");	
+		}
 		// Pattern 6 End
-		System.out.println("\n==============================\n");
-		// Pattern 6 Start
-		// Pattern 6 End
-		System.out.println("\n==============================\n");
+		
+		System.out.println("\n============== Prog.7 ===============\n");
+		/*
+		 * Print integer line using 2D array, Ex.
+		 * 1
+		 * 2
+		 * 3
+		 * 4
+		 * 5
+		 * */
+		// Pattern 7 Start
+		int row=5,col=1;
+		int[][] my2DArray=new int[row][col];
+		my2DArray[0][0]=1;
+		my2DArray[1][0]=2;
+		my2DArray[2][0]=3;
+		my2DArray[3][0]=4;
+		my2DArray[4][0]=5;
+		for(int i=0;i<row;i++) {
+			System.out.println(my2DArray[i][0]);
+		}
+		// Pattern 7 End
+		
+		System.out.println("\n============== Prog.8 ===============\n");
+		/*
+		           *
+                 *
+               *
+             *
+           *
+		* */
+		// Pattern 8 Start
+		int prog8Size=5;
+		for (int m=1;m<=prog8Size;m++) {
+			for (int i=prog8Size-1;i>m-1;i--) {
+				System.out.print("  ");
+			}System.out.print(" *\n");
+		}
+		// Pattern 8 End
+		
+		System.out.println("\n============== Prog.9 ===============\n");
+		// Pattern 9 Start
+		
+		// Pattern 9 End
+		
+		System.out.println("\n============== Prog.10 ===============\n");
+		// Pattern 10 Start
+		
+		// Pattern 10 End
+		
 	}
 }

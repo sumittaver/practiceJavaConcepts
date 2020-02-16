@@ -1,4 +1,4 @@
-//Example of Abstract class and Methods 
+//Example of Abstract class and Methods
 package abstractClasses;
 
 public class AbstractClassExample {

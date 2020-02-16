@@ -21,9 +21,9 @@ public class QueueConcept {
 		 * PriorityQueue doesn't allow null values to be stored in the queue
 		 * */
 		PriorityQueue<String> queue=new PriorityQueue<String>();  
-		queue.add("Amit Sharma");  
-		queue.add("Vijay Raj");  
-		queue.add("JaiShankar");  
+		queue.add("Amit Sharma");
+		queue.add("Vijay Raj");
+		queue.add("JaiShankar");
 		queue.add("Raj");  
 		System.out.println("head:"+queue.element());  
 		System.out.println("head:"+queue.peek());  
